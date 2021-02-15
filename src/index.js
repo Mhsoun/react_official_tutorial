@@ -117,8 +117,9 @@ class Game extends React.Component {
                 <div>{status}</div>
                 <ol>{moves}</ol>
             </div>
-            <hr/>
             </div>
+            <hr/>
+
             <p>
         If you have extra time or want to practice your new React skills, here are some ideas for improvements that you could make to the tic-tac-toe game which are listed in order of increasing difficulty:
         <ol>
