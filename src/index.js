@@ -105,18 +105,40 @@ class Game extends React.Component {
         };
 
       return (
-        <div className="game">
-          <div className="game-board">
-            <Board
-             squares={current.squares}
-             onClick={(i) => this.handleClick(i)}
-            />
-          </div>
-          <div className="game-info">
-            <div>{status}</div>
-            <ol>{moves}</ol>
-          </div>
-        </div>
+          <>
+            <div className="game">
+            <div className="game-board">
+                <Board
+                squares={current.squares}
+                onClick={(i) => this.handleClick(i)}
+                />
+            </div>
+            <div className="game-info">
+                <div>{status}</div>
+                <ol>{moves}</ol>
+            </div>
+            <hr/>
+            </div>
+            <p>
+        If you have extra time or want to practice your new React skills, here are some ideas for improvements that you could make to the tic-tac-toe game which are listed in order of increasing difficulty:
+        <ol>
+            <li>Display the location for each move in the format (col, row) in the move history list.
+            </li>
+            <li>Bold the currently selected item in the move list.
+            </li>
+            <li>
+            Rewrite Board to use two loops to make the squares instead of hardcoding them.
+            </li>
+            <li>
+            Add a toggle button that lets you sort the moves in either ascending or descending order.
+            </li>
+            <li>When someone wins, highlight the three squares that caused the win.
+            </li>
+            <li>When no one wins, display a message about the result being a draw.
+            </li>
+        </ol>
+        </p>
+        </>
       );
     }
   }
